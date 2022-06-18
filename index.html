@@ -9,27 +9,43 @@
     <script src="https://kit.fontawesome.com/750cfe0c6a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 </head>
 
 <body>
-    <div class="navbar">
+    <nav class="nav">
+
+        <div class="nav__brand">
+            <a href="#" class="nav__brand-link"> <span>usługi kominiarskie</span><span
+                    class="nav__brand-link--name">imię
+                    i nazwisko</span>
+            </a>
+
+        </div>
+        <div class=" navdesktop">
+            <div class="navdesktop__items">
+                <a href="#islands" class="navmobile__item">Wyspy</a>
+                <a href="#offers" class="navmobile__item">Oferty</a>
+                <a href="#reviews" class="navmobile__item">Opinie</a>
+                <a href="#contact" class="navmobile__item">Kontakt</a>
+            </div>
+        </div>
         <button class="burger-btn">
             <div class="burger-btn__box">
                 <div class="burger-btn__bars"></div>
             </div>
         </button>
-    </div>
-
-
-    <nav class="nav">
-
-        <div class="nav__items">
-            <a href="#islands" class="nav__item">Wyspy</a>
-            <a href="#offers" class="nav__item">Oferty</a>
-            <a href="#reviews" class="nav__item">Opinie</a>
-            <a href="#contact" class="nav__item">Kontakt</a>
+        <div class="navmobile">
+            <div class="navmobile__items">
+                <a href="#islands" class="navmobile__item">Wyspy</a>
+                <a href="#offers" class="navmobile__item">Oferty</a>
+                <a href="#reviews" class="navmobile__item">Opinie</a>
+                <a href="#contact" class="navmobile__item">Kontakt</a>
+            </div>
         </div>
     </nav>
     <script src="js/main.js"></script>

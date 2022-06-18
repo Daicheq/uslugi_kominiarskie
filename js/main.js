@@ -1,13 +1,13 @@
-const nav = document.querySelector('.nav')
+const nav = document.querySelector('.navmobile')
 const navBtn = document.querySelector('.burger-btn')
-const allNavItems = document.querySelectorAll('.nav__item')
+const allNavItems = document.querySelectorAll('.navmobile__item')
 
 const handleNav = () => {
-	nav.classList.toggle('nav--active')
+	nav.classList.toggle('navmobile--active')
 
 	allNavItems.forEach(item => {
 		item.addEventListener('click', () => {
-			nav.classList.remove('nav--active')
+			nav.classList.remove('navmobile --active')
 		})
 	})
 }

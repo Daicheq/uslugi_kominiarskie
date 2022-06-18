@@ -15,16 +15,45 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   font-size: 1.6rem;
-  height: 200vh;
 }
 
-.navbar {
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 100px;
   position: fixed;
   top: 0;
   background-color: #2e2b2b;
   z-index: 999;
+}
+
+.nav__brand {
+  display: none;
+  margin-left: 1em;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.nav__brand-link {
+  color: #e0dfdf;
+  text-decoration: none;
+}
+
+.nav__brand-link span {
+  display: block;
+}
+
+.nav__brand-link--name {
+  font-size: 2rem;
 }
 
 .burger-btn {
@@ -66,7 +95,11 @@ body {
   width: 100%;
 }
 
-.nav {
+.navdesktop {
+  display: none;
+}
+
+.navmobile {
   position: fixed;
   top: 0;
   display: -webkit-box;
@@ -81,6 +114,7 @@ body {
   height: 100vh;
   width: 100%;
   background-color: #2e2b2b;
+  text-transform: uppercase;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
@@ -88,17 +122,17 @@ body {
   z-index: 100;
 }
 
-.nav--active {
+.navmobile--active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-.nav__item {
+.navmobile__item {
   position: relative;
   display: block;
   margin: 0.5em 0;
   padding: 0.5em 2em;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   color: #e0dfdf;
   text-decoration: none;
 }
@@ -106,6 +140,28 @@ body {
 @media (min-width: 1200px) {
   .burger-btn {
     display: none;
+  }
+  .navdesktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-transform: uppercase;
+  }
+  .navdesktop__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 576px) {
+  .nav__brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=main.css.map */
