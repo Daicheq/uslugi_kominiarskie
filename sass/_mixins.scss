@@ -1,0 +1,9 @@
+@mixin navItemStyle {
+	position: relative;
+	display: block;
+	margin: 0.5em 0;
+	padding: 0.5em 2em;
+	font-size: 2.5rem;
+	color: $pure-white;
+	text-decoration: none;
+}

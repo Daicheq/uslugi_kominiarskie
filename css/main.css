@@ -99,6 +99,16 @@ body {
   display: none;
 }
 
+.navdesktop__item {
+  position: relative;
+  display: block;
+  margin: 0.5em 0;
+  padding: 0.5em 2em;
+  font-size: 2.5rem;
+  color: #e0dfdf;
+  text-decoration: none;
+}
+
 .navmobile {
   position: fixed;
   top: 0;
@@ -154,6 +164,30 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-right: 2em;
+  }
+  .navdesktop__item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #e0dfdf;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+  }
+  .navdesktop__item:hover::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left;
+            transform-origin: left;
   }
 }
 
