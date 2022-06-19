@@ -201,10 +201,44 @@ body {
   background-color: #e0dfdf;
 }
 
-.aboutus__block .fa-info-circle {
+.aboutus__block button {
   position: absolute;
   top: 3rem;
   right: 3rem;
+  font-size: 7rem;
+  background: none;
+  border: none;
+  cursor: crosshair;
+  z-index: 10;
+}
+
+.aboutus__block button:hover ~ .aboutus__block-img {
+  -webkit-clip-path: circle(120% at 50% 90%);
+          clip-path: circle(120% at 50% 90%);
+  opacity: 1;
+}
+
+.aboutus__block-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url("/img/about-mini.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-clip-path: circle(0 at 95% 8%);
+          clip-path: circle(0 at 95% 8%);
+  -webkit-transition: ease-out 0.8s, -webkit-clip-path 0.8s;
+  transition: ease-out 0.8s, -webkit-clip-path 0.8s;
+  transition: clip-path 0.8s, ease-out 0.8s;
+  transition: clip-path 0.8s, ease-out 0.8s, -webkit-clip-path 0.8s;
+  opacity: 0;
+  z-index: 5;
+}
+
+.aboutus__block .fa-info-circle {
   font-size: 7rem;
 }
 
@@ -223,6 +257,9 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
+  .aboutus__block-img {
+    background-image: url("/img/about-big.jpg");
+  }
 }
 
 @media (min-width: 992px) {
@@ -230,10 +267,16 @@ body {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/hero-big.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-big.jpg");
   }
-  .aboutus__block i {
+  .aboutus__block {
+    padding-top: 10rem;
+  }
+  .aboutus__block button {
     top: 2.5rem;
     right: 2.5rem;
-    font-size: 8rem;
+    margin-bottom: 0.5rem;
+  }
+  .aboutus__block .fa-info-circle {
+    font-size: 11rem;
   }
 }
 
@@ -268,10 +311,10 @@ body {
             transform: scaleX(0);
     -webkit-transform-origin: right;
             transform-origin: right;
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
   }
   .navdesktop__item:hover::after {
     -webkit-transform: scaleX(1);
@@ -293,9 +336,11 @@ body {
             box-shadow: 5px 5px 8px;
     overflow: hidden;
   }
-  .aboutus__block .fa-info-circle {
+  .aboutus__block button {
     top: 2.5rem;
     right: 2.5rem;
+  }
+  .aboutus__block .fa-info-circle {
     font-size: 15rem;
   }
   .aboutus__block-text--header {

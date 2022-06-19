@@ -164,10 +164,37 @@ body {
 		padding: 3em 2em;
 		background-color: $pure-white;
 
-		.fa-info-circle {
+		button {
 			position: absolute;
 			top: 3rem;
 			right: 3rem;
+			font-size: 7rem;
+			background: none;
+			border: none;
+			cursor: crosshair;
+			z-index: 10;
+		}
+		button:hover ~ .aboutus__block-img {
+			clip-path: circle(120% at 50% 90%);
+			opacity: 1;
+		}
+		&-img {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background-image: url('/img/about-mini.jpg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			clip-path: circle(0 at 95% 8%);
+			transition: clip-path 0.8s, ease-out 0.8s;
+			opacity: 0;
+			z-index: 5;
+		}
+
+		.fa-info-circle {
 			font-size: 7rem;
 		}
 		&-text--header {
@@ -186,6 +213,9 @@ body {
 	.nav__brand {
 		display: flex;
 	}
+	.aboutus__block-img {
+		background-image: url('/img/about-big.jpg');
+	}
 }
 @media (min-width: 992px) {
 	.hero-image {
@@ -193,10 +223,14 @@ body {
 	}
 	.aboutus {
 		&__block {
-			i {
+			padding-top: 10rem;
+			button {
 				top: 2.5rem;
 				right: 2.5rem;
-				font-size: 8rem;
+				margin-bottom: 0.5rem;
+			}
+			.fa-info-circle {
+				font-size: 11rem;
 			}
 		}
 	}
@@ -224,7 +258,7 @@ body {
 				background-color: $pure-white;
 				transform: scaleX(0);
 				transform-origin: right;
-				transition: transform 0.3s;
+				transition: transform 0.4s;
 			}
 			&__item:hover::after {
 				transform: scaleX(1);
@@ -236,9 +270,11 @@ body {
 			margin: 3em 0;
 			&__block {
 				position: relative;
-				.fa-info-circle {
+				button {
 					top: 2.5rem;
 					right: 2.5rem;
+				}
+				.fa-info-circle {
 					font-size: 15rem;
 				}
 				display: flex;
