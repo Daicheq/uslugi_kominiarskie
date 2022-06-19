@@ -13,12 +13,17 @@ html {
 }
 
 body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#323232), color-stop(40%, #3f3f3f), color-stop(150%, #1c1c1c)), -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.4)), color-stop(200%, rgba(0, 0, 0, 0.25)));
+  background-image: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
   font-family: 'Lato', sans-serif;
   font-size: 1.6rem;
+  overflow-x: hidden;
 }
 
 .wrapper {
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav {
@@ -48,8 +53,14 @@ body {
 }
 
 .nav__brand-link {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
   color: #e0dfdf;
   text-decoration: none;
+}
+
+.nav__brand-link:hover {
+  color: #bdbbbb;
 }
 
 .nav__brand-link span {
@@ -151,10 +162,6 @@ body {
   text-decoration: none;
 }
 
-.header {
-  width: 100%;
-}
-
 .hero-image {
   position: relative;
   width: 100vw;
@@ -188,6 +195,28 @@ body {
   font-weight: 700;
 }
 
+.aboutus__block {
+  position: relative;
+  padding: 3em 2em;
+  background-color: #e0dfdf;
+}
+
+.aboutus__block i {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  font-size: 7rem;
+}
+
+.aboutus__block-text--header {
+  margin-bottom: 1em;
+  font-size: 3.8rem;
+}
+
+.aboutus__block-text--desc {
+  margin: 0.5em 0;
+}
+
 @media (min-width: 576px) {
   .nav__brand {
     display: -webkit-box;
@@ -201,9 +230,14 @@ body {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/hero-big.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-big.jpg");
   }
+  .aboutus__block i {
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 8rem;
+  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) and (min-width: 1200px) {
   .burger-btn {
     display: none;
   }
@@ -244,6 +278,33 @@ body {
             transform: scaleX(1);
     -webkit-transform-origin: left;
             transform-origin: left;
+  }
+  .aboutus {
+    margin: 3em 0;
+  }
+  .aboutus__block {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 12em 5em 15em;
+    border-radius: 8px;
+    -webkit-box-shadow: 5px 5px 8px;
+            box-shadow: 5px 5px 8px;
+    overflow: hidden;
+  }
+  .aboutus__block i {
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 15rem;
+  }
+  .aboutus__block-text--header {
+    margin-bottom: 0.5em;
+    font-size: 4.8rem;
+  }
+  .aboutus__block-text--desc {
+    margin: 1em 0;
+    font-size: 2.2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
