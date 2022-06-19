@@ -224,7 +224,7 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: url("./img/about-mini.jpg");
+  background-image: url("../img/about-mini.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -258,7 +258,7 @@ body {
     display: flex;
   }
   .aboutus__block-img {
-    background-image: url("./img/about-big.jpg");
+    background-image: url("../img/about-big.jpg");
   }
 }
 
