@@ -164,7 +164,7 @@ body {
 		padding: 3em 2em;
 		background-color: $pure-white;
 
-		i {
+		.fa-info-circle {
 			position: absolute;
 			top: 3rem;
 			right: 3rem;
@@ -236,7 +236,7 @@ body {
 			margin: 3em 0;
 			&__block {
 				position: relative;
-				i {
+				.fa-info-circle {
 					top: 2.5rem;
 					right: 2.5rem;
 					font-size: 15rem;

@@ -201,7 +201,7 @@ body {
   background-color: #e0dfdf;
 }
 
-.aboutus__block i {
+.aboutus__block .fa-info-circle {
   position: absolute;
   top: 3rem;
   right: 3rem;
@@ -293,7 +293,7 @@ body {
             box-shadow: 5px 5px 8px;
     overflow: hidden;
   }
-  .aboutus__block i {
+  .aboutus__block .fa-info-circle {
     top: 2.5rem;
     right: 2.5rem;
     font-size: 15rem;
