@@ -215,7 +215,6 @@ body {
 .aboutus__block button:hover ~ .aboutus__block-img {
   -webkit-clip-path: circle(120% at 50% 90%);
           clip-path: circle(120% at 50% 90%);
-  opacity: 1;
 }
 
 .aboutus__block-img {
@@ -224,7 +223,7 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: url("./img/about-mini.jpg");
+  background-image: url("../img/about-mini.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -234,7 +233,6 @@ body {
   transition: ease-out 0.8s, -webkit-clip-path 0.8s;
   transition: clip-path 0.8s, ease-out 0.8s;
   transition: clip-path 0.8s, ease-out 0.8s, -webkit-clip-path 0.8s;
-  opacity: 0;
   z-index: 5;
 }
 
@@ -258,7 +256,7 @@ body {
     display: flex;
   }
   .aboutus__block-img {
-    background-image: url("./img/about-big.jpg");
+    background-image: url("../img/about-big.jpg");
   }
 }
 
