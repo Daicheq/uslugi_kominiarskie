@@ -215,6 +215,7 @@ body {
 .aboutus__block button:hover ~ .aboutus__block-img {
   -webkit-clip-path: circle(120% at 50% 90%);
           clip-path: circle(120% at 50% 90%);
+  opacity: 1;
 }
 
 .aboutus__block-img {
@@ -233,6 +234,7 @@ body {
   transition: ease-out 0.8s, -webkit-clip-path 0.8s;
   transition: clip-path 0.8s, ease-out 0.8s;
   transition: clip-path 0.8s, ease-out 0.8s, -webkit-clip-path 0.8s;
+  opacity: 0;
   z-index: 5;
 }
 
