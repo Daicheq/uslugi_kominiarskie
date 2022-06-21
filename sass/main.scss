@@ -203,7 +203,16 @@ body {
 			margin: 0.5em 0;
 		}
 	}
+
+	&-gallery {
+		img {
+			height: 45vh;
+			object-fit: cover;
+			overflow: hidden;
+		}
+	}
 }
+
 //========================
 //MEDIA QUERIES
 //========================
@@ -265,6 +274,9 @@ body {
 		}
 
 		.aboutus {
+			box-shadow: 5px 5px 8px;
+			border-radius: 8px;
+			overflow: hidden;
 			margin: 3em 0;
 			&__block {
 				position: relative;
@@ -276,10 +288,8 @@ body {
 					font-size: 15rem;
 				}
 				display: flex;
-				padding: 12em 5em 15em;
-				border-radius: 8px;
-				box-shadow: 5px 5px 8px;
-				overflow: hidden;
+				padding: 10em 5em 5em;
+
 				&-text--header {
 					margin-bottom: 0.5em;
 					font-size: 4.8rem;

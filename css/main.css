@@ -249,6 +249,13 @@ body {
   margin: 0.5em 0;
 }
 
+.aboutus-gallery img {
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
 @media (min-width: 576px) {
   .nav__brand {
     display: -webkit-box;
@@ -321,6 +328,10 @@ body {
             transform-origin: left;
   }
   .aboutus {
+    -webkit-box-shadow: 5px 5px 8px;
+            box-shadow: 5px 5px 8px;
+    border-radius: 8px;
+    overflow: hidden;
     margin: 3em 0;
   }
   .aboutus__block {
@@ -328,11 +339,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 12em 5em 15em;
-    border-radius: 8px;
-    -webkit-box-shadow: 5px 5px 8px;
-            box-shadow: 5px 5px 8px;
-    overflow: hidden;
+    padding: 10em 5em 5em;
   }
   .aboutus__block button {
     top: 2.5rem;
