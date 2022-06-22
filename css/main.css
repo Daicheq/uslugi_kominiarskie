@@ -200,14 +200,26 @@ body {
   font-weight: 700;
 }
 
+.white-section {
+  background-color: #f1eded;
+}
+
 h2 {
   margin-bottom: 1em;
   font-size: 3.8rem;
 }
 
+.white-h2 {
+  color: #000;
+}
+
+.aboutus {
+  margin: 2em 0em;
+  padding: 3em 2em;
+}
+
 .aboutus__block {
   position: relative;
-  padding: 3em 2em;
   background-color: #e0dfdf;
 }
 
@@ -263,7 +275,7 @@ h2 {
 
 .offers {
   margin: 2em 0em;
-  padding: 3em 2em;
+  padding: 5em 2em 7em;
 }
 
 .cards__block {
@@ -280,7 +292,7 @@ h2 {
 }
 
 .card {
-  min-height: 30vh;
+  height: 35vh;
   width: 80%;
   margin: 1em 0;
   padding: 2em 1em;
@@ -329,7 +341,8 @@ h2 {
         flex-wrap: wrap;
   }
   .card {
-    width: 40%;
+    height: 30vh;
+    width: 45%;
     margin: 1em 1em;
   }
 }
@@ -363,7 +376,7 @@ h2 {
   }
   .card {
     width: 25%;
-    margin: 1em 1em;
+    margin: 1em 2em;
   }
 }
 
