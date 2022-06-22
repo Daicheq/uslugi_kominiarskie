@@ -200,6 +200,11 @@ body {
   font-weight: 700;
 }
 
+h2 {
+  margin-bottom: 1em;
+  font-size: 3.8rem;
+}
+
 .aboutus__block {
   position: relative;
   padding: 3em 2em;
@@ -245,11 +250,6 @@ body {
   font-size: 7rem;
 }
 
-.aboutus__block-text--header {
-  margin-bottom: 1em;
-  font-size: 3.8rem;
-}
-
 .aboutus__block-text--desc {
   margin: 0.5em 0;
 }
@@ -261,6 +261,54 @@ body {
   overflow: hidden;
 }
 
+.offers {
+  margin: 2em 0em;
+  padding: 3em 2em;
+}
+
+.cards__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  min-height: 30vh;
+  width: 80%;
+  margin: 1em 0;
+  padding: 2em 1em;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(3, 6, 26, 0.15);
+          box-shadow: 0 2px 5px 0 rgba(3, 6, 26, 0.15);
+  font-size: 1.8rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.card ul {
+  -webkit-padding-start: 1.2em;
+          padding-inline-start: 1.2em;
+}
+
+.card ul li {
+  padding: 0.2em 0;
+}
+
 @media (min-width: 576px) {
   .nav__brand {
     display: -webkit-box;
@@ -269,6 +317,20 @@ body {
   }
   .aboutus__block-img {
     background-image: url("../img/about-big.jpg");
+  }
+  .cards__block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card {
+    width: 40%;
+    margin: 1em 1em;
   }
 }
 
@@ -288,9 +350,27 @@ body {
   .aboutus__block .fa-info-circle {
     font-size: 11rem;
   }
+  .cards__block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .card {
+    width: 25%;
+    margin: 1em 1em;
+  }
 }
 
-@media (min-width: 992px) and (min-width: 1200px) {
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 5rem;
+  }
   .burger-btn {
     display: none;
   }
@@ -347,14 +427,12 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 10em 5em 5em;
   }
   .aboutus__block button {
-    top: 2.5rem;
-    right: 2.5rem;
+    right: 0.5em;
   }
   .aboutus__block .fa-info-circle {
-    font-size: 15rem;
+    font-size: 12rem;
   }
   .aboutus__block-text--header {
     margin-bottom: 0.5em;
