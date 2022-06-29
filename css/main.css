@@ -205,9 +205,23 @@ body {
 }
 
 h2 {
+  position: relative;
   margin-bottom: 1em;
+  text-align: center;
   text-transform: uppercase;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
+}
+
+h2:after {
+  position: absolute;
+  height: 4px;
+  bottom: -0.3em;
+  left: 50%;
+  width: 6rem;
+  content: '';
+  background-color: #2e2b2b;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .aboutus {
@@ -225,9 +239,8 @@ h2 {
   position: absolute;
   top: 0;
   right: 1rem;
-  font-size: 4rem;
   background: none;
-  border: none;
+  border: 1px solid transparent;
   cursor: crosshair;
   z-index: 10;
 }
@@ -259,7 +272,7 @@ h2 {
 }
 
 .aboutus__block .fa-info-circle {
-  font-size: 7rem;
+  font-size: 5.5rem;
 }
 
 .aboutus__block-text--desc {
@@ -395,6 +408,9 @@ footer {
 }
 
 @media (min-width: 768px) {
+  h2 {
+    font-size: 4rem;
+  }
   .contact__block {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -409,6 +425,9 @@ footer {
   }
   .contact__block-item:first-child {
     margin-top: 5em;
+  }
+  .aboutus__block .fa-info-circle {
+    font-size: 7rem;
   }
 }
 

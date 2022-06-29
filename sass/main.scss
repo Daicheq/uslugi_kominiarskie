@@ -166,9 +166,22 @@ body {
 	background-color: $light-white;
 }
 h2 {
+	position: relative;
 	margin-bottom: 1em;
+	text-align: center;
 	text-transform: uppercase;
-	font-size: 3.8rem;
+	font-size: 3.5rem;
+}
+
+h2:after {
+	position: absolute;
+	height: 4px;
+	bottom: -0.3em;
+	left: 50%;
+	width: 6rem;
+	content: '';
+	background-color: $dark-color;
+	transform: translate(-50%);
 }
 //ABOUTUS
 .aboutus {
@@ -181,9 +194,8 @@ h2 {
 			position: absolute;
 			top: 0;
 			right: 1rem;
-			font-size: 4rem;
 			background: none;
-			border: none;
+			border: 1px solid transparent;
 			cursor: crosshair;
 			z-index: 10;
 		}
@@ -207,7 +219,7 @@ h2 {
 		}
 
 		.fa-info-circle {
-			font-size: 7rem;
+			font-size: 5.5rem;
 		}
 		&-text--desc {
 			margin: 0.5em 0;
@@ -310,6 +322,9 @@ footer {
 	}
 }
 @media (min-width: 768px) {
+	h2 {
+		font-size: 4rem;
+	}
 	.contact__block {
 		flex-direction: row;
 		justify-content: space-evenly;
@@ -318,7 +333,15 @@ footer {
 			margin-top: 5em;
 		}
 	}
+	.aboutus {
+		&__block {
+			.fa-info-circle {
+				font-size: 7rem;
+			}
+		}
+	}
 }
+
 @media (min-width: 992px) {
 	.hero-image {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/hero-big.jpg');
