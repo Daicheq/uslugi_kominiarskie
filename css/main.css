@@ -354,6 +354,7 @@ h2:after {
 }
 
 .contact__block-item {
+  width: 100%;
   margin-top: 5em;
 }
 
@@ -425,6 +426,9 @@ footer {
   }
   .contact__block-item:first-child {
     margin-top: 5em;
+  }
+  .contact__block-item {
+    width: 50%;
   }
   .aboutus__block .fa-info-circle {
     font-size: 7rem;

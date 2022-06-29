@@ -276,6 +276,7 @@ h2:after {
 	align-items: center;
 	text-align: center;
 	&-item {
+		width: 100%;
 		margin-top: 5em;
 		i {
 			margin-bottom: 0.3em;
@@ -331,6 +332,9 @@ footer {
 		align-items: center;
 		&-item:first-child {
 			margin-top: 5em;
+		}
+		&-item {
+			width: 50%;
 		}
 	}
 	.aboutus {
