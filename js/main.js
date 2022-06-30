@@ -7,7 +7,7 @@ const handleNav = () => {
 
 	allNavItems.forEach(item => {
 		item.addEventListener('click', () => {
-			nav.classList.remove('navmobile --active')
+			nav.classList.remove('navmobile--active')
 		})
 	})
 }
