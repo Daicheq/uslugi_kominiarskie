@@ -297,8 +297,14 @@ h2:after {
 }
 //FOOTER
 footer {
-	padding: 5em 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 12vh;
 	background-color: $dark-color;
+	color: $pure-white;
+	font-size: 1.5rem;
 }
 //========================
 //MEDIA QUERIES
@@ -323,6 +329,13 @@ footer {
 		height: 30vh;
 		width: 45%;
 		margin: 1em 1em;
+	}
+	.footer__bottom-text {
+		margin-top: 2em;
+		font-size: 1.8rem;
+	}
+	footer {
+		font-size: 2rem;
 	}
 }
 @media (min-width: 768px) {
@@ -349,6 +362,9 @@ footer {
 				font-size: 7rem;
 			}
 		}
+	}
+	footer {
+		font-size: 2.2rem;
 	}
 }
 
