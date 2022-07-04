@@ -245,26 +245,39 @@ h2:after {
 }
 
 .card {
-	height: 35vh;
-	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 40vh;
+	width: 100%;
 	margin: 1em 0;
-	padding: 2em 1em;
-	background-color: $just-white;
-	border-radius: 5px;
-	box-shadow: 0 2px 5px 0 rgba(3, 6, 26, 0.15);
+	border-radius: 8px;
+	background-color: $dark-color;
+	text-transform: uppercase;
 	font-size: 1.8rem;
+	font-weight: 700;
+	color: $just-white;
 	transition: 0.3s;
 	&:hover {
-		box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 0.5);
-		transform: scale(1.05);
+		background-color: $light-white;
+		border: 0.8em solid $dark-color;
+		color: $just-black;
+		transform: scale(1.1);
 	}
 	ul {
-		padding-inline-start: 1.2em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		list-style: none;
+		text-align: center;
 		li {
-			padding: 0.2em 0;
+			margin-bottom: 1.2em;
+			padding: 0.2em 0.2em;
 		}
 	}
 }
+
 //CONTACT
 .contact {
 	@include marginPaddingSection;
@@ -327,7 +340,7 @@ footer {
 	}
 	.card {
 		height: 30vh;
-		width: 45%;
+		width: 75%;
 		margin: 1em 1em;
 	}
 	.footer__bottom-text {
@@ -363,6 +376,9 @@ footer {
 			}
 		}
 	}
+	.card {
+		width: 50%;
+	}
 	footer {
 		font-size: 2.2rem;
 	}
@@ -391,8 +407,13 @@ footer {
 		flex-wrap: nowrap;
 	}
 	.card {
-		width: 25%;
+		width: 40%;
 		margin: 1em 2em;
+		font-size: 2rem;
+
+		&:hover {
+			border: 1em solid $dark-color;
+		}
 	}
 }
 @media (min-width: 1200px) {
@@ -461,6 +482,12 @@ footer {
 				margin: 1em 0;
 				font-size: 2.2rem;
 			}
+		}
+	}
+	.card {
+		width: 50%;
+		&:hover {
+			border: 1.2em solid $dark-color;
 		}
 	}
 }
