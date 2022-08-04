@@ -258,12 +258,6 @@ h2:after {
 	font-weight: 700;
 	color: $just-white;
 	transition: 0.3s;
-	&:hover {
-		background-color: $light-white;
-		border: 0.8em solid $dark-color;
-		color: $just-black;
-		transform: scale(1.1);
-	}
 	ul {
 		display: flex;
 		flex-direction: column;
@@ -323,6 +317,9 @@ footer {
 //MEDIA QUERIES
 //========================
 @media (min-width: 576px) {
+	.hero-image {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/hero-big.jpg');
+	}
 	.aboutus {
 		&__block {
 			&-img {
@@ -385,9 +382,6 @@ footer {
 }
 
 @media (min-width: 992px) {
-	.hero-image {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/hero-big.jpg');
-	}
 	.aboutus {
 		&__block {
 			padding-top: 10rem;
@@ -410,10 +404,6 @@ footer {
 		width: 40%;
 		margin: 1em 2em;
 		font-size: 2rem;
-
-		&:hover {
-			border: 1em solid $dark-color;
-		}
 	}
 }
 @media (min-width: 1200px) {
@@ -486,8 +476,5 @@ footer {
 	}
 	.card {
 		width: 44%;
-		&:hover {
-			border: 1.1em solid $dark-color;
-		}
 	}
 }

@@ -326,14 +326,6 @@ h2:after {
   transition: 0.3s;
 }
 
-.card:hover {
-  background-color: #f1eded;
-  border: 0.8em solid #2e2b2b;
-  color: #000;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 .card ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -416,6 +408,10 @@ footer {
 }
 
 @media (min-width: 576px) {
+  .hero-image {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/hero-big.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-big.jpg");
+  }
   .aboutus__block-img {
     background-image: url("../img/about-big.jpg");
   }
@@ -485,10 +481,6 @@ footer {
 }
 
 @media (min-width: 992px) {
-  .hero-image {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/hero-big.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-big.jpg");
-  }
   .aboutus__block {
     padding-top: 10rem;
   }
@@ -515,9 +507,6 @@ footer {
     width: 40%;
     margin: 1em 2em;
     font-size: 2rem;
-  }
-  .card:hover {
-    border: 1em solid #2e2b2b;
   }
 }
 
@@ -601,9 +590,6 @@ footer {
   }
   .card {
     width: 44%;
-  }
-  .card:hover {
-    border: 1.1em solid #2e2b2b;
   }
 }
 /*# sourceMappingURL=main.css.map */
